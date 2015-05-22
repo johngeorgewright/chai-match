@@ -1,7 +1,7 @@
 {
   "name": "chai-match",
   "main": "chai-match.js",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage": "https://github.com/johngeorgewright/chai-match",
   "authors": [
     "John Wright <johngeorge.wright@gmail.com>"
