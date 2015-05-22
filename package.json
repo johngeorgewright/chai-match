@@ -1,6 +1,6 @@
 {
   "name": "chai-match",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Advanced RegExp assertions for Chai.js",
   "main": "assertions.js",
   "scripts": {
