@@ -1,20 +1,27 @@
 {
   "name": "chai-match",
   "version": "0.0.0",
-  "description": "Better matching for chai.js",
+  "description": "Advanced RegExp assertions for Chai.js",
   "main": "assertions.js",
   "scripts": {
     "test": "mocha "
   },
   "keywords": [
-    "chai"
+    "chai",
+    "test",
+    "assertion",
+    "regexp",
+    "match"
   ],
   "author": "John Wright <johngeorge.wright@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "chai": "*"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johngeorgewright/chai-match.git"
   },
+  "dependencies": {},
   "devDependencies": {
+    "chai": "^2.3.0",
     "mocha": "^2.2.5"
   }
 }
