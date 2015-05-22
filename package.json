@@ -1,0 +1,20 @@
+{
+  "name": "chai-match",
+  "version": "0.0.0",
+  "description": "Better matching for chai.js",
+  "main": "assertions.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "keywords": [
+    "chai"
+  ],
+  "author": "John Wright <johngeorge.wright@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "*"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
