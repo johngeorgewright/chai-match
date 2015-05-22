@@ -4,9 +4,9 @@ module.exports = function (chai, _) {
   var Assertion = chai.Assertion;
   var flag = _.flag;
 
-  Assertion.overwriteMethod('match', function matchOverwriter() {
+  Assertion.overwriteMethod('match', function matchOverwriter(_super) {
     return function assertMatch(re, msg) {
-      if (msg) flag(this, 'message', msg);
+      _super.call(this, re, msg);
 
       var obj = flag(this, 'object');
       var match = re.exec(obj);
@@ -14,12 +14,6 @@ module.exports = function (chai, _) {
       if (match) {
         flag(this, 'matchCaptures', match.slice(1));
       }
-
-      this.assert(
-        match,
-        'expected #{this} to match ' + re,
-        'expected #{this} not to match ' + re
-      );
     }
   });
 
