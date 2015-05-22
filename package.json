@@ -2,9 +2,11 @@
   "name": "chai-match",
   "version": "1.0.1",
   "description": "Advanced RegExp assertions for Chai.js",
-  "main": "assertions.js",
+  "main": "chai-match.js",
   "scripts": {
-    "test": "mocha "
+    "test": "mocha",
+    "build": "uglifyjs --compress --mangle -o chai-match.min.js -- chai-match.js",
+    "prepublish": "npm test && npm run build"
   },
   "keywords": [
     "chai",
@@ -22,6 +24,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^2.3.0",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "uglify-js": "^2.4.23"
   }
 }

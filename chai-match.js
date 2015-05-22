@@ -1,6 +1,17 @@
-var chai = require('chai');
-
-module.exports = function (chai, _) {
+(function (chaiMatch) {
+  if (typeof require === "function" && typeof exports === "object" && typeof module === "object") {
+    // NodeJS
+    module.exports = chaiMatch;
+  } else if (typeof define === "function" && define.amd) {
+    // AMD
+    define(function () {
+      return chaiMatch;
+    });
+  } else {
+    // Other environment (usually <script> tag): plug in to global chai instance directly.
+    chai.use(chaiMatch);
+  }
+})(function (chai, _) {
   var Assertion = chai.Assertion;
   var flag = _.flag;
 
@@ -21,4 +32,4 @@ module.exports = function (chai, _) {
     var capture = (flag(this, 'matchCaptures') || [])[n];
     flag(this, 'object', capture);
   });
-};
+});
