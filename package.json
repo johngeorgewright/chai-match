@@ -9,11 +9,9 @@
     "prepublish": "npm test && npm run build"
   },
   "keywords": [
-    "chai",
-    "test",
-    "assertion",
-    "regexp",
-    "match"
+    "chai-plugin",
+    "browser",
+    "string"
   ],
   "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "MIT",
