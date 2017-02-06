@@ -1,6 +1,8 @@
 Chai Match
 ==========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/johngeorgewright/chai-match.svg)](https://greenkeeper.io/)
+
 > Advanced RegExp assertions for Chai.js.
 
 [![NPM Version](https://img.shields.io/npm/v/chai-match.svg?style=flat-square)](https://www.npmjs.com/package/chai-match)
