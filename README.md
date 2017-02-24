@@ -1,10 +1,12 @@
 Chai Match
 ==========
 
-> Advanced RegExp assertions for Chai.js.
-
+[![Build Status](https://img.shields.io/travis/johngeorgewright/chai-match/master.svg?style=flat-square)](https://travis-ci.org/johngeorgewright/chai-match)
 [![NPM Version](https://img.shields.io/npm/v/chai-match.svg?style=flat-square)](https://www.npmjs.com/package/chai-match)
+[![Dependencies](https://img.shields.io/gemnasium/johngeorgewright/chai-match.svg?style=flat-square)](https://gemnasium.com/github.com/johngeorgewright/chai-match)
 [![License](https://img.shields.io/npm/l/chai-match.svg?style=flat-square)](https://github.com/johngeorgewright/chai-match/blob/master/LICENSE)
+
+> Advanced RegExp assertions for Chai.js.
 
 Installation
 ------------
